@@ -1,3 +1,6 @@
+p,dd,dt{
+  font-size: 1.4rem;
+}
 #details .contents-wrapper p{
   margin: 0 0 2rem 40rem;
 }
@@ -5,5 +8,13 @@
   margin: 0 0 0 40rem;
 }
 .contents-wrapper img{
-  width: 25rem;
+  width: 45%;
                 }
+/* .qa_left{
+  display: inline-block;
+  width: 50%;
+}
+.qa_right{
+  display: inline-block;
+  width: 50%;
+} */

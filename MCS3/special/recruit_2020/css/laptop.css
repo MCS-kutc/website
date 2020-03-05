@@ -3,9 +3,12 @@
   height: auto;
   }
   p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   white-space:pre-line;
   width: 25px;
+}
+dt dd{
+  font-size: 1.2rem;
 }
 h3{
   font-size: 1.5rem;
@@ -17,7 +20,7 @@ h3{
 }
 .contents-wrapper{
   margin: 2rem  0 0 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 8%;
 
 }
 
@@ -25,7 +28,7 @@ h3{
 width: 45%;
               }
 .contents-wrapper p{
-  width: 30rem;
+  width: 28rem;
 }
 .section{
 margin: 2rem 0.5rem 0 0;
@@ -33,7 +36,7 @@ margin: 2rem 0.5rem 0 0;
 #qa .container{
   margin: 5rem 0 0 0;
 }
-
+/* 背景 */
  #comment::before{
   background-size:  1440px ;
   min-height: 10vh;
@@ -94,6 +97,7 @@ margin: 2rem 0.5rem 0 0;
   min-height: 1440px;
   right: 1rem;
 
+
 }
 .section #detail{
   width: 1440px
@@ -104,47 +108,23 @@ margin: 2rem 0.5rem 0 0;
   white-space: pre-line;
     width: 30rem;
 }
-#details .contents-wrapper img{
-  width: 300px;
-}
-
-
-/* .contents-wrapperQA{
-  width: 80%;
-  text-align: center;
-
- }
-
- .qa-container{
-  display: inline-block;
-  text-align: justify;
- } */
-
- Q＆A中央
- /*.contents-wrapperQA dl{
-  text-align: center;
- }
-
- .qa-container dt,dd{
-   display: inline;
-   text-align: left;
-  /* }  */
- /* .qa-container{
-   margin:1rem;
-   text-align: center;
-   display: block;
- } */
+/* Q＆A */
  .contents-wrapper-QA{
    margin: 1.6rem auto;
-   text-align: center;
+   text-align: start;
    display: block;
+   display: flex;
  }
  .contents-wrapper-QA .qa-container{
    text-align: left;
    display: inline-block;
  }
+ .qa_left{
+   margin-left: 5.5rem;
+ }
+
  .link_btn {
-  margin: 0 0 0 20rem;
+  margin: 2rem 0 0 20rem;
   display: block;
   width: 8rem;
   /* position: rela; */
@@ -166,4 +146,7 @@ margin: 2rem 0.5rem 0 0;
 /*以下訪問済みのデザイン*/
 .link_btn:visited {
   color: gray;/*文字をグレイに*/
+}
+#qa h2{
+  margin: 6rem 0 0 5.5rem;
 }
