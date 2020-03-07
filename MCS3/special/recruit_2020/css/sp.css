@@ -28,6 +28,7 @@
   z-index: 2;
 }*/
 
+
 .top img{
   width: 100%;
   height: auto;
@@ -44,6 +45,7 @@ body {
   --cyan: #008cb4;
   background: var(--gray);/*varで定義されたの出力*/
   overflow-x: hidden;/*x軸方向隠される初期値visible*/
+  font-feature-settings: "pkna";
   }
 
 
@@ -58,7 +60,10 @@ p, dt, dd {
   line-height: 1.75;
   margin: 1rem 1.2rem;
   text-shadow: 0 0 10px black;
+  z-index: 1;
 }
+
+
 .twitterblue {color: #00aced}
 .youtubered {color: #c4302b}
 .container {
@@ -239,10 +244,6 @@ header::before {
   z-index: -1;
 }
 
-/*以下訪問済みのデザイン*/
-.link_btn:visited {
-  color: gray;/*文字をグレイに*/
-}
 
 .button a{
   font-size: 0.5rem;
@@ -262,13 +263,24 @@ header::before {
   color: white;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
-  margin: 0.3rem 0 0 12rem;
+  margin: 0.3rem 0 0 10rem;
 }
 .link_btn:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
+}
+/*以下訪問済みのデザイン*/
+.link_btn:visited {
+  color: #008cb4;/*文字を青に*/
+}
+/*以下カーソルを当てたとき*/
+.link_btn:hover {
+  background: silver;/*背景色をシルバーに*/
+  text-decoration: none;/*下線を消す*/
+  color:white;
+
 }
 #details::before {
   position: absolute;
@@ -471,7 +483,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 .contents-wrapper a{
   color : #F9BF33;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 .contents-wrapper a:hover{
@@ -486,4 +498,58 @@ font-family: Arial, Helvetica, sans-serif;
 .answer a:hover{
   color: #008cb4;
   text-decoration: none;
+}
+/*メニュー部分*/
+#ham-menu {
+  background-color: #fff; /*メニュー背景色*/
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px 40px; /*メニュー内部上下左右余白*/
+  position: fixed;
+  right: -300px; /*メニュー横幅①と合わせる*/
+  top: 0;
+  transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 300px; /*メニュー横幅①*/
+  z-index: 1000;
+}
+
+/*メニューアイコン部分は疑似要素で*/
+#ham-menu::before {
+  background-color: #fff; /*ボタン部分背景色*/
+  border-radius: 0 0 0 10px; /*左下角丸*/
+  color: #333; /*アイコン（フォント）色*/
+  content: "≡"; /*メニューアイコン*/
+  display: block;
+  font-size: 50px; /*アイコン（フォント）サイズ*/
+  height: 50px;
+  line-height: 50px; /*縦位置中央化*/
+  position: absolute;
+  right: 100%;
+  text-align: center;
+  top: 0;
+  width: 50px;
+}
+
+/*透過背景部分*/
+#menu-background {
+  background-color: #333; /*黒背景部分背景色*/
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 100%;
+  z-index: -1;
+}
+
+/*hover 時の処理*/
+#ham-menu:hover {
+  transform: translate(-300px); /*メニュー横幅①と合わせる*/
+}
+
+#ham-menu:hover + #menu-background {
+  opacity: 0.5; /*黒背景部分透過度*/
+  z-index: 999;
 }
