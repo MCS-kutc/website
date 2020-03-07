@@ -62,7 +62,7 @@
   margin: 0 5rem 0 0;
   z-index: 1;
   white-space: pre-line;
-  width: 32rem;
+  width: 17rem;
 }
 
 #details .contents-wrapper img, #how-to .contents-wrapper img {
@@ -71,12 +71,11 @@
   /* margin-right: 2rem; */
 }
 .link_btn {
-  margin: 0 0 0 120px;
+  margin: 0 0 0 12rem;
   display: block;
   width: 150px;
   /* position: rela; */
   text-decoration: none;/*下線消す*/
-  background: silver;/*背景を水色に*/
   color: white;/*文字を白に */
   padding:0.5rem 0 0 0.2rem;/*内側の余白*/
   /*border-radius: 20px;角を丸くする*/
@@ -89,10 +88,13 @@
   color:white;
 
 }
+.button a{
+  margin: 2rem 0 0 7rem;
+}
 
 /*以下訪問済みのデザイン*/
 .link_btn:visited {
-  color: gray;/*文字をグレイに*/
+  color: #008cb4;/*文字を青に*/
 }
 .button a{
   font-size: 1rem;
@@ -109,30 +111,43 @@
   margin: 0 0 0 23rem;
 }
 #details .contents-wrapper p{
-  margin: 0 0 2rem 23rem;
+  margin: 0 0 2rem 21rem;
 }
 /* .qa-container{
   margin:1rem;
   text-align: center;
   display: block;
 } */
+
+/* O&A */
 .contents-wrapper-QA{
   margin: 1.6rem auto;
   text-align: center;
   display: block;
   display: flex;
 }
+  .qa_left{
+    display: inline-block;
+    width: 50%;
+  }
+
+  .qa_right{
+    display: inline-block;
+    width: 50%;
+  }
+
+
 .contents-wrapper-QA .qa-container{
   text-align: left;
   display: inline-block;
 }
-.qa-container{
+/* .qa-container{
   text-align: left;
   float: left;
 }
 .qa-container{
   text-align: right;
-}
+} */
 .contents-wrapper{
   margin: 2rem  0 0 5rem;
 }

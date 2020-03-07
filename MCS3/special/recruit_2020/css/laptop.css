@@ -3,9 +3,12 @@
   height: auto;
   }
   p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   white-space:pre-line;
   width: 25px;
+}
+dt dd{
+  font-size: 1.2rem;
 }
 h3{
   font-size: 1.5rem;
@@ -17,11 +20,16 @@ h3{
 }
 .contents-wrapper{
   margin: 2rem  0 0 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 8%;
+
 }
+
 .contents-wrapper img{
 width: 45%;
               }
+.contents-wrapper p{
+  width: 28rem;
+}
 .section{
 margin: 2rem 0.5rem 0 0;
 }
@@ -96,12 +104,14 @@ margin: 2rem 0.5rem 0 0;
 
 }
 #details .contents-wrapper p{
-  margin: 0 0 2rem 25rem;
+  margin: 0 0 2rem 26rem;
+  white-space: pre-line;
+  width: 28rem;
 }
 /* Q＆A */
  .contents-wrapper-QA{
    margin: 1.6rem auto;
-   text-align: center;
+   text-align: start;
    display: block;
    display: flex;
  }
@@ -136,4 +146,7 @@ margin: 2rem 0.5rem 0 0;
 /*以下訪問済みのデザイン*/
 .link_btn:visited {
   color: gray;/*文字をグレイに*/
+}
+#qa h2{
+  margin: 6rem 0 0 5.5rem;
 }

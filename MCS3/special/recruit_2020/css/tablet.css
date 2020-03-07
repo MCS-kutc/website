@@ -1,18 +1,6 @@
-/* .contents-wrapper img{
-  width: 250px;
-  height: auto;
-}
-
-.contents-wrapper p{
-  white-space: pre-line;
-  width: 20rem;
-}
-#details .contents-wrapper p{
-  margin: 0 0 2rem 20rem;
-}
 #details .contents-wrapper h3{
-  margin: 0 0 2rem 20rem;
-} */
+  margin: 0 0 0 20rem;
+}
 .link_btn {
   margin: 2rem 0 0 120px;
   display: block;
@@ -25,3 +13,5 @@
   /*border-radius: 20px;角を丸くする*/
  /* font-family: 'Avenir','Arial';フォントをいい感じに*/
 }
+/* #details .contents-wrapper img{
+  /* width: 280px; */
