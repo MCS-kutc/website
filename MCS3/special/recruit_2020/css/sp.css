@@ -99,30 +99,8 @@ header {
   width: auto;
 }
 /* ハンバーガーメニュー */
-/* クリックボタン */
-.ham {
- position: relative;
- width: 40px;
- height: 40px;
- cursor: pointer;
- background-color: aqua;
-}
-.ham_line {
- position: absolute;
- left: 10px;
- width: 20px;
- height: 1px;
- background-color: #333333;
-}
-.ham_line1 {
- top: 10px;
-}
-.ham_line2 {
- top: 18px;
-}
-.ham_line3 {
- top: 26px;
-}
+
+
 
 header::before {
   display: block;
@@ -139,9 +117,7 @@ header::before {
   z-index: -1;
 }
 
-.header-btns {
-  /* margin-top: 10rem; */
-}
+
 
 .header-btn {
   margin: 2rem auto;
@@ -203,7 +179,7 @@ header::before {
 }
 
 /* 背景 */
-#comment::before {
+/* #comment::before {
   position: absolute;
   content: " ";
   width: 100%;
@@ -224,7 +200,20 @@ header::before {
   background: url("../img/triangle_2.svg");
   background-repeat: no-repeat;
   z-index: -1;
-}
+} */
+#comment::before{
+
+    position: absolute;
+    content: " ";
+    width: 110%;
+    height: 110%;
+    top: 1rem;
+    background: url("../img/triangle-double.svg");
+    background-repeat: no-repeat;
+    z-index: -2;
+  }
+
+
 #how-to::before {
   position: absolute;
   content: " ";
@@ -409,7 +398,8 @@ h3 {
 #pageTop {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 0.01rem;
+  margin-right: 0;
 }
 
 

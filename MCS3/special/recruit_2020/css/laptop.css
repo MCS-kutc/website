@@ -38,7 +38,7 @@ margin: 2rem 0.5rem 0 0;
 }
 /* 背景 */
  #comment::before{
-  background-size:  1440px ;
+  background-size:  100% ;
   min-height: 10vh;
   height: 100%;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ margin: 2rem 0.5rem 0 0;
 }
 #comment::after{
  background: url("../img/triangle_2.svg");
- background-size: 1440px ;
+ background-size: 100%;
  min-height: 10vh;
  height: 100%;
  background-repeat: no-repeat;
@@ -101,13 +101,16 @@ margin: 2rem 0.5rem 0 0;
 }
 .section #detail{
   width: 1440px
-
 }
 #details .contents-wrapper p{
   margin: 0 0 2rem 25rem;
   white-space: pre-line;
     width: 30rem;
 }
+#page-top{
+  margin: 1rem;
+}
+
 /* Q＆A */
  .contents-wrapper-QA{
    margin: 1.6rem auto;
@@ -122,7 +125,7 @@ margin: 2rem 0.5rem 0 0;
  .qa_left{
    margin-left: 5.5rem;
  }
-
+/* ボタン */
  .link_btn {
   margin: 2rem 0 0 20rem;
   display: block;
