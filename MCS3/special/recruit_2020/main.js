@@ -2,7 +2,9 @@
 $(function () {
 $(function () {
   // クリック時の動作
-  $('.hamberger_line').on('click', function() {
+      // メニューを閉じる
+       // クリック時の動作
+    $('.hamberger_line').on('click', function() {
       // メニューを閉じる
       if($(this).hasClass('open')) {
           $(this).removeClass('open');
@@ -12,8 +14,10 @@ $(function () {
           $(this).addClass('open');
           $('.hamberger_list').addClass('open');
       }
+
   });
-});
+  });
+
 
 //■page topボタン
 $(function(){
@@ -69,14 +73,16 @@ $(function(){
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
       });
+      });
 
-      $('a[href^=""]').click(function(){
+      $('a[href^="#"]').click(function(){
         var speed = 600;
         var href= $(this).attr("href");
         var target = $(href == "#detail" || href == "id=detail" ? 'html' : href);
         var position = target.offset().top;
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
+      });
       });
 
 
@@ -88,19 +94,19 @@ $(function(){
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
       });
+      });
 
 
-    });
+
+  
+
+
     //  ham.addEventListener('click', function(){
     //   ham.classList.toggle('clicked');
     //   // クリックされたらclickedを追加
     //   // toggleはクラスが含まれていれば削除、
     //   // 含まれていなければ追加する
-    });
-    });
-
-
-    // var ham = document.getElementById('ham');
+      // var ham = document.getElementById('ham');
     // var menu_wrapper = document.getElementById('menu_wrapper');
     // ham, menu_wrapperの要素を取得
 
