@@ -338,6 +338,7 @@ header::before {
   border-bottom: solid 4px #627295;
   border-radius: 3px;
   margin: 0.3rem 0 0 10rem;
+  color: #008cb4;
 }
 .link_btn:active {
   /*ボタンを押したとき*/

@@ -11,7 +11,7 @@ dt dd{
   font-size: 1.2rem;
 }
 h3{
-  font-size: 1.5rem;
+  font-size: 3vh;
   text-align: center;
   padding:0 0 0 5%;
 }
@@ -103,7 +103,7 @@ margin: 2rem 0.5rem 0 0;
   width: 1440px
 }
 #details .contents-wrapper p{
-  margin: 0 0 2rem 26rem;
+  margin: 0 0 2% 48%;
   white-space: pre-line;
   width: 28rem;
 }
@@ -138,17 +138,8 @@ margin: 2rem 0.5rem 0 0;
   /*border-radius: 20px;角を丸くする*/
  /* font-family: 'Avenir','Arial';フォントをいい感じに*/
 }
-/*以下カーソルを当てたとき*/
-.link_btn:hover {
-  background: silver;/*背景色をシルバーに*/
-  text-decoration: none;/*下線を消す*/
-  color:white;
-
-}
-
-/*以下訪問済みのデザイン*/
-.link_btn:visited {
-  color: gray;/*文字をグレイに*/
+.button a{
+  margin: 2rem 0 0 10rem;
 }
 #qa h2{
   margin: 6rem 0 0 5.5rem;

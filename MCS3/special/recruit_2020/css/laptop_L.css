@@ -1,11 +1,11 @@
 p,dd,dt{
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 #details .contents-wrapper p{
   margin: 0 0 2rem 40rem;
 }
 #details .contents-wrapper h3{
-  margin: 0 0 0 40rem;
+  margin: 0 0 0 65%;
 }
 .contents-wrapper img{
   width: 45%;

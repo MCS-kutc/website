@@ -92,10 +92,6 @@
   margin: 2rem 0 0 7rem;
 }
 
-/*以下訪問済みのデザイン*/
-.link_btn:visited {
-  color: #008cb4;/*文字を青に*/
-}
 .button a{
   font-size: 1rem;
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
