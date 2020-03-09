@@ -21,10 +21,8 @@
     <link rel="stylesheet" href="./css/laptop_L.css" media="screen and (min-width: 1440px)">
     <!-- 1440px -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--CDN-jQuery-->
 
-    <script src="./main.js"></script>
+
     <title>Recruit | Media Creative Supporter (MCS)</title>
     <script src="https://kit.fontawesome.com/3fe69ce995.js" crossorigin="anonymous"></script>
     <!--awesomeフォント-->
@@ -42,24 +40,41 @@
                 <img src="./img/logo_vertical.svg" alt="Media Creative Supporter Logo" />
               </a>
             </li>
-         <!-- ハンバーガーメニュー -->
-         <div id="open" class="btn"><a href="#g_menu">三</a></div>
-         <div id="g_menu">
-           <div id="close" class="btn"><a href="#">×</a></div>
-           <div class="wrapper">
+            <!-- ハンバーガーメニュー -->
+              <div class="ham" id="ham">
+                <span class="ham_line ham_line1"></span>
+                <span class="ham_line ham_line2"></span>
+                <span class="ham_line ham_line3"></span>
+              </div>
 
-            <a href="#nav" aria-label="Open Navigation"><i class="fa fa-bars"></i></a>
+
+         <!-- ハンバーガーメニューの中身 -->
+         <div class="hamberger_menu">
+          <!-- 三本線 -->
+          <div class="hamberger_line">
+              <span></span>
+              <span></span>
+              <span></span>
           </div>
-         </div>
+
+          <!-- クリックしたときのメニュー -->
+          <div class="hamberger_list">
+              <ul>
+                  <li><a href="#">ドロワー1</a></li>
+                  <li><a href="#">ドロワー2</a></li>
+                  <li><a href="#">ドロワー3</a></li>
+              </ul>
+          </nav>
+      </div>
 
           </ul>
         </div>
         </nav>
-      <!-- ヘッダーコンテンツ -->
+        <!-- ヘッダーコンテンツ -->
 
          <div class="top">
         <img src="./img/topphoto.jpg" alt="" >
-        </div>
+      </div>
        <div class="container">
         <div class="header-btns">
           <div id="how-to-btn" class="header-btn">
@@ -104,8 +119,8 @@
             <p>他にも、新生活の不安やサークル・団体について相談できるブースも用意して待ってます！</p>
             <div class="button">
             <a class="link_btn" href="https://mcs-kutc.com/news/recruit_2020/" target="_blank">
-            MORE
-              </a>
+              MORE
+            </a>
               </div>
           </div>
           <div class="contents-wrapper">
@@ -114,21 +129,21 @@
             <p>飲み会よりももっと気軽に交流できる機会を設けました！参加費不要ですので、お菓子食べたいなぐらいの気持ちで来ていただければ嬉しいです！</p>
             <div class="button">
               <a class="link_btn" href="https://mcs-kutc.com/news/recruit_2020/" target="_blank">
-              MORE
-                </a>
-                </div>
+                MORE
+              </a>
+            </div>
           </div>
           <div class="contents-wrapper">
             <h3>入団説明会・ご飯会</h3>
             <img src="./img/Joining briefing session.jpg" alt="入団説明会・ご飯会の写真" />
             <p>リーダーから、MCSについての話や入団方法などの具体的な説明をします！その後にご飯会を開催する予定です。もっと深い話が聞けるかも？！</p>
-                <div class="button">
+            <div class="button">
                   <a class="link_btn" href="https://mcs-kutc.com/news/recruit_2020/" target="_blank">
-                  MORE
-                    </a>
+                    MORE
+                  </a>
                     </div>
-          </div>
-        </section>
+                  </div>
+                </section>
       </div>
       <!-- 団体の説明 -->
       <div class="section" id="details">
@@ -173,27 +188,24 @@
                 <dd class="answer"> 関西大学体育会KAISERSを盛り上げるべくその試合を中継・ハイライト制作を行ったりする<a
                   href="https://m.youtube.com/c/KAISERSTV" target="_blank">KAISERS
                   TV</a>というグループがMCS内にあります。スポーツや中継に興味のある人お待ちしてます！</dd>
-              </dl>
+                </dl>
             </div>
 
                <div class="qa_right">
-                <dl class="qa-container">
-                  <dt class="question"> 団員数と男女比はどんな感じですか？</dt>
-                  <dd class="answer"> 2019年度秋学期の時点で合計126人います。(男子65人 女子61人)</dd>
-                </dl>
+                 <dl class="qa-container">
+                   <dt class="question"> 団員数と男女比はどんな感じですか？</dt>
+                   <dd class="answer"> 2019年度秋学期の時点で合計126人います。(男子65人 女子61人)</dd>
+                  </dl>
 
-                <dl class="qa-container">
+                  <dl class="qa-container">
                 <dt class="question">パソコンを持ってないのですが必要ですか？</dt>
                 <dd class="answer">基本的には学校内のパソコンで作業できるので必需品ではないです。</dd><dd>入学してすぐではなく、学校生活に慣れてから検討する方がいいと思います。</dd>
                 </dl>
 
               </div >
 
-            <!-- <dl class="qa-container">
-              <dt class="question">どういう質問が来るのだろう？？</dt>
-              <dd class="answer">実際に来てみないとわかんないな。。。</dd>
-            </dl> -->
-                 </div>
+
+            </div>
         </section>
       </div>
     </main>
@@ -209,11 +221,13 @@
       <!-- <div><a href="https://twitter.com/mcs_kutc" target="_blank">
         <i class="fab fa-twitter-square fa-3x fa-pull-right twitterblue"></i></a>
         <a href="https://www.youtube.com/channel/UCRYoWNgkS4KA4BQfAjfxNIg">
-        <i class="fab fa-youtube fa-3x fa-pull-right youtubered"></i></a>
+          <i class="fab fa-youtube fa-3x fa-pull-right youtubered"></i></a>
         </div> -->
 
-    </footer>
+      </footer>
 
-
-  </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- CDN-jQuery -->
+      <script src="./main.js"></script>
+    </body>
   </html>
