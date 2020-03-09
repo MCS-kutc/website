@@ -144,3 +144,8 @@ margin: 2rem 0.5rem 0 0;
 #qa h2{
   margin: 6rem 0 0 5.5rem;
 }
+
+#pageTop {
+  margin-right: 2.2vh;
+  width: 2vh;
+}
