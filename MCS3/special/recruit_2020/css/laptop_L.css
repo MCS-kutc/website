@@ -24,3 +24,6 @@ h3{
 #pageTop {
   width: 4vh;
 }
+#pageTop a {
+  right: 0.4rem;
+}
