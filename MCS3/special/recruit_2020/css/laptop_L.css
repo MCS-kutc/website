@@ -1,6 +1,10 @@
 p,dd,dt{
   font-size: 1.7rem;
 }
+.header-nav img{
+  height: 5rem;
+  width: auto;
+}
 #details .contents-wrapper p{
   margin: 0 0 2rem 40rem;
 }
