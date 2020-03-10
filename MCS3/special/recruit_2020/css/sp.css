@@ -281,7 +281,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-
 #comment::before{
 
     position: absolute;
