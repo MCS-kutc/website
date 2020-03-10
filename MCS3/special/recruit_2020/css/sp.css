@@ -152,19 +152,7 @@ header {
 .hamberger_line.open span:nth-of-type(3) {
   transform: translateY(-12px) rotate(45deg);
 }
-/* 透過部分 */
-#menu-background {
-  background-color: #333; /*黒背景部分背景色*/
-  display: block;
-  height: 100%;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
-  width: 100%;
-  z-index: -1;
-}
+
 
 /* メニュー */
 
@@ -198,14 +186,16 @@ header {
   /* border-top: 1px solid #9F99A3;
   border-left: 1px solid #9F99A3;
   border-right: 1px solid #9F99A3; */
-  background-color: #EEEEEE;
+  background-color: #333;
   padding: 3px 10px;
   text-decoration: none;
-  color: #333;
+  color: white;
   width: 100%;
+  height: 5rem;
+
   margin: 0px;
   text-align: left;
-  font-size: 14px;
+  font-size: 2rem;
 }
 .hamberger_line:hover,
 .hamberger_line:active {
@@ -390,6 +380,7 @@ header {
   color:white;
 
 }
+
 #details::before {
   position: absolute;
   content: " ";
@@ -537,8 +528,8 @@ h3 {
   z-index: 999;
   padding: 8px 0 0 8px;
   border-radius: 30px;
-  width: 35px;
-  height: 35px;
+  width: 31px;
+  height: 44px;
   background-color:var(--cyan);
   color: #fff;
   font-weight: bold;
@@ -591,13 +582,21 @@ font-family: Arial, Helvetica, sans-serif;
 
 .contents-wrapper a{
   color : #008cb4;
-  font-size: 1.3rem;
+  font-size: 2vh;
   font-weight: bold;
 }
 .contents-wrapper a:hover{
   color: #F9BF33;
   text-decoration: none;
 }
+#details .contents-wrapper a{
+  color:#F9BF33;
+}
+.contents-wrapper a:hover{
+  color: #008cb4;
+  text-decoration: none;
+}
+
 .answer a{
   color: #F9BF33;
 
