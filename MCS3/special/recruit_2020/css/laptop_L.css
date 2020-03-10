@@ -1,18 +1,15 @@
 p,dd,dt{
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 #details .contents-wrapper p{
   margin: 0 0 2rem 40rem;
 }
 #details .contents-wrapper h3{
-  margin: 0 0 0 63%;
+  margin: 0 0 0 65%;
 }
 .contents-wrapper img{
   width: 45%;
                 }
-h3{
-  font-size: 2rem;
-}
 /* .qa_left{
   display: inline-block;
   width: 50%;

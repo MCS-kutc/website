@@ -3,7 +3,7 @@
   height: auto;
   }
   p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   white-space:pre-line;
   width: 25px;
 }
@@ -28,7 +28,7 @@ h3{
 width: 45%;
               }
 .contents-wrapper p{
-  width: 29rem;
+  width: 28rem;
 }
 .section{
 margin: 2rem 0.5rem 0 0;
@@ -105,7 +105,7 @@ margin: 2rem 0.5rem 0 0;
 #details .contents-wrapper p{
   margin: 0 0 2% 48%;
   white-space: pre-line;
-  width: 28.2rem;
+  width: 28rem;
 }
 #page-top{
   margin: 1rem;
