@@ -103,7 +103,7 @@ header {
   width: auto;
 }
 /* ハンバーガーメニュー */
-/* .hamberger_line {
+.hamberger_line {
   display: inline-block;
   width: 36px;
   height: 28px;
@@ -111,13 +111,12 @@ header {
   cursor: pointer;
   position: fixed;
   /* position: absolute; */
-  /* top: 30px;
+  top: 30px;
   right: 30px;
-  z-index: 10;
+  z-index: 100;
   transform: translateX(0);
   transition: transform .5s;/*ボタンにマウスカーソルを乗せたときに、色や大きさなどが変わる時間を設定するときに使われる.5秒でｘ軸方向に0になる動く*/
-
-/* }
+}
 
 .hamberger_line span {
   display: inline-block;
@@ -126,11 +125,11 @@ header {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: white;
+  background-color:white;
   transition: all .5s;/*変化するすべてのプロパティ*/
-/* }
+}
 /* 三本線 */
-/* .hamberger_line span:nth-of-type(1) {
+.hamberger_line span:nth-of-type(1) {
   top: 0;
 }
 
@@ -153,17 +152,28 @@ header {
 .hamberger_line.open span:nth-of-type(3) {
   transform: translateY(-12px) rotate(45deg);
 }
-
-
+/* 透過部分 */
+#menu-background {
+  background-color: #333; /*黒背景部分背景色*/
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 100%;
+  z-index: -1;
+}
 
 /* メニュー */
 
-/* .hamberger_list {
+.hamberger_list {
   width: 250px;
   height: 100%;
   padding-top: 100px;
   background-color: #222222;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 10;
@@ -178,24 +188,29 @@ header {
 .hamberger_list li {
   /* text-align: center; */
   /* padding: 10px 0; */
-  /* list-style: none;
+  list-style: none;
   display: block;
 }
 
 .hamberger_list a {
   text-decoration: none;
   display: block;
-
-  background-color:#222222;
-  padding:3px 10px;
+  /* border-top: 1px solid #9F99A3;
+  border-left: 1px solid #9F99A3;
+  border-right: 1px solid #9F99A3; */
+  background-color: #EEEEEE;
+  padding: 3px 10px;
   text-decoration: none;
-  color:white;
+  color: #333;
   width: 100%;
-  height: 3rem;
   margin: 0px;
-  text-align:left;
-  font-size: 2rem;
-}  */
+  text-align: left;
+  font-size: 14px;
+}
+.hamberger_line:hover,
+.hamberger_line:active {
+    color:#00B285;
+}
 
 
 
@@ -593,7 +608,6 @@ font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 /*メニュー部分*/
-
 #ham-menu {
   background-color: #fff; /*メニュー背景色*/
   box-sizing: border-box;
