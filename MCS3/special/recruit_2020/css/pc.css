@@ -1,7 +1,7 @@
-.top img{
+.top img {
   width: 100%;
   height: auto;
-  }
+}
 .container {
   max-width: 80rem;
 }
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   /* Flexboxで検索！検索！！ */
-   margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .header-btn {
@@ -21,9 +21,6 @@
   justify-content: center;
   padding: 0;
 }
-
-
-
 .header-nav {
   width: auto;
   height: 100%;
@@ -33,7 +30,6 @@
   position: relative;
   margin: 2rem 0;
   min-height: 15rem;
-
 }
 
 .contents-wrapper img {
@@ -49,11 +45,10 @@
   display: block;
   padding-top: 75%;
 }
-#how-to img{
-    position: absolute;
-    display: inline-block;
-    position: right;
-    vertical-align: center;
+#how-to img {
+  position: absolute;
+  display: inline-block;
+  vertical-align: center;
 }
 .contents-wrapper p {
   position: relative;
@@ -65,7 +60,8 @@
   width: 17rem;
 }
 
-#details .contents-wrapper img, #how-to .contents-wrapper img {
+#details .contents-wrapper img,
+#how-to .contents-wrapper img {
   top: 0;
   text-align: right;
   /* margin-right: 2rem; */
@@ -75,24 +71,23 @@
   display: block;
   width: 150px;
   /* position: rela; */
-  text-decoration: none;/*下線消す*/
-  color: white;/*文字を白に */
-  padding:0.5rem 0 0 0.2rem;/*内側の余白*/
+  text-decoration: none; /*下線消す*/
+  color: white; /*文字を白に */
+  padding: 0.5rem 0 0 0.2rem; /*内側の余白*/
   /*border-radius: 20px;角を丸くする*/
- /* font-family: 'Avenir','Arial';フォントをいい感じに*/
+  /* font-family: 'Avenir','Arial';フォントをいい感じに*/
 }
 /*以下カーソルを当てたとき*/
 .link_btn:hover {
-  background: silver;/*背景色をシルバーに*/
-  text-decoration: none;/*下線を消す*/
-  color:white;
-
+  background: silver; /*背景色をシルバーに*/
+  text-decoration: none; /*下線を消す*/
+  color: white;
 }
-.button a{
+.button a {
   margin: 2rem 0 0 7rem;
 }
 
-.button a{
+.button a {
   font-size: 1rem;
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
     "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
@@ -103,10 +98,11 @@
   margin: 0;
 }
 
-#details .contents-wrapper h3, #details .contents-wrapper p {
+#details .contents-wrapper h3,
+#details .contents-wrapper p {
   margin: 0 0 0 23rem;
 }
-#details .contents-wrapper p{
+#details .contents-wrapper p {
   margin: 0 0 2rem 21rem;
 }
 /* .qa-container{
@@ -116,24 +112,23 @@
 } */
 
 /* O&A */
-.contents-wrapper-QA{
+.contents-wrapper-QA {
   margin: 1.6rem auto;
   text-align: center;
   display: block;
   display: flex;
 }
-  .qa_left{
-    display: inline-block;
-    width: 50%;
-  }
+.qa_left {
+  display: inline-block;
+  width: 50%;
+}
 
-  .qa_right{
-    display: inline-block;
-    width: 50%;
-  }
+.qa_right {
+  display: inline-block;
+  width: 50%;
+}
 
-
-.contents-wrapper-QA .qa-container{
+.contents-wrapper-QA .qa-container {
   text-align: left;
   display: inline-block;
 }
@@ -144,6 +139,6 @@
 .qa-container{
   text-align: right;
 } */
-.contents-wrapper{
-  margin: 2rem  0 0 5rem;
+.contents-wrapper {
+  margin: 2rem 0 0 5rem;
 }

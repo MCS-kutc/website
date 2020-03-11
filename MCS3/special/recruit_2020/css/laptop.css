@@ -1,57 +1,54 @@
-.top img{
+.top img {
   width: 100%;
   height: auto;
-  }
-  p{
+}
+p {
   font-size: 1.2rem;
-  white-space:pre-line;
+  white-space: pre-line;
   width: 25px;
 }
-dt dd{
+dt dd {
   font-size: 1.2rem;
 }
-h3{
-  font-size: 3vh;
+h3 {
+  font-size: 2.03rem;
   text-align: center;
-  padding:0 0 0 5%;
+  padding: 0 0 0 5%;
 }
-.header-sentense{
+.header-sentense {
   font-size: 10rem;
 }
-.contents-wrapper{
-  margin: 2rem  0 0 0;
+.contents-wrapper {
+  margin: 2rem 0 0 0;
   padding-bottom: 8%;
-
 }
 
-.contents-wrapper img{
-width: 45%;
-              }
-.contents-wrapper p{
+.contents-wrapper img {
+  width: 45%;
+}
+.contents-wrapper p {
   width: 28rem;
 }
-.section{
-margin: 2rem 0.5rem 0 0;
+.section {
+  margin: 2rem 0.5rem 0 0;
 }
 /* #qa .container{
   margin: 0 0 0 0;
 } */
 /* 背景 */
- #comment::before{
-  background-size:  100% ;
+#comment::before {
+  background-size: 100%;
   min-height: 10vh;
   height: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
-
 }
-#comment::after{
- background: url("../img/triangle_2.svg");
- background-size: 100%;
- min-height: 10vh;
- height: 100%;
- background-repeat: no-repeat;
-
+#comment::after {
+  background: url("../img/triangle_2.svg");
+  background-size: 100%;
+  min-height: 10vh;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 /* #comment::before{
   background: url("../img/triangle-ander1.svg");
@@ -64,19 +61,8 @@ margin: 2rem 0.5rem 0 0;
   display: none;
 } */
 
- #how-to::after{
-  background: url("../img/square_2.svg");
-  background-size:  100% auto;
-  /* min-height: 100%; */
-  /* background-position: center; */
-  /* object-fit: cover; */
-  height: 100%;
-  top: calc(25% + 0.5rem);
-  right: 0;
-  background-repeat: no-repeat;
 
- }
-#how-to::before{
+#how-to::before {
   background: url("../img/square_1.svg");
   background-size: 100% auto;
   /* background-position: center; */
@@ -86,62 +72,68 @@ margin: 2rem 0.5rem 0 0;
   z-index: -1;
   background-repeat: no-repeat;
 }
-#detail::before{
+#how-to::after {
+  background: url("../img/square_2.svg");
+  background-size: 100% auto;
+  height: 100%;
+  top: calc(25% + 0.5rem);
+  right: 0;
+  background-repeat: no-repeat;
+}
+#detail::before {
   background: url("../img/parallelogram_1.svg");
   background-size: 1280px 995px;
   min-height: 155555px;
 }
-#detail::after{
+#detail::after {
   background: url("../img/parallelogram_2.svg");
   background-size: 1280px 995px;
   min-height: 1440px;
   right: 1rem;
-
-
 }
-.section #detail{
-  width: 1440px
+.section #detail {
+  width: 1440px;
 }
-#details .contents-wrapper p{
+#details .contents-wrapper p {
   margin: 0 0 2% 48%;
   white-space: pre-line;
   width: 28rem;
 }
-#page-top{
+#page-top {
   margin: 1rem;
 }
 
 /* Q＆A */
- .contents-wrapper-QA{
-   margin: 1.6rem auto;
-   text-align: start;
-   display: block;
-   display: flex;
- }
- .contents-wrapper-QA .qa-container{
-   text-align: left;
-   display: inline-block;
- }
- .qa_left{
-   margin-left: 5.5rem;
- }
+.contents-wrapper-QA {
+  margin: 1.6rem auto;
+  text-align: start;
+  display: block;
+  display: flex;
+}
+.contents-wrapper-QA .qa-container {
+  text-align: left;
+  display: inline-block;
+}
+.qa_left {
+  margin-left: 5.5rem;
+}
 /* ボタン */
- .link_btn {
+.link_btn {
   margin: 2rem 0 0 20rem;
   display: block;
   width: 8rem;
   /* position: rela; */
-  text-decoration: none;/*下線消す*/
-  background: silver;/*背景を水色に*/
-  color: white;/*文字を白に */
-  padding:0.5rem;/*内側の余白*/
+  text-decoration: none; /*下線消す*/
+  background: silver; /*背景を水色に*/
+  color: white; /*文字を白に */
+  padding: 0.5rem; /*内側の余白*/
   /*border-radius: 20px;角を丸くする*/
- /* font-family: 'Avenir','Arial';フォントをいい感じに*/
+  /* font-family: 'Avenir','Arial';フォントをいい感じに*/
 }
-.button a{
+.button a {
   margin: 2rem 0 0 10rem;
 }
-#qa h2{
+#qa h2 {
   margin: 6rem 0 0 5.5rem;
 }
 
@@ -149,10 +141,10 @@ margin: 2rem 0.5rem 0 0;
   margin-right: 2.2vh;
   width: 2vh;
 }
-.hamawesome{
+.hamawesome {
   font-size: 20rem;
 }
-.menu-btn{
+.menu-btn {
   width: 100px;
   height: 100px;
 }
