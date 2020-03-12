@@ -1,15 +1,21 @@
-p,dd,dt{
+p,
+dd,
+dt {
   font-size: 1.7rem;
 }
-#details .contents-wrapper p{
+.header-nav img {
+  height: 5rem;
+  width: auto;
+}
+#details .contents-wrapper p {
   margin: 0 0 2rem 40rem;
 }
-#details .contents-wrapper h3{
-  margin: 0 0 0 65%;
+#details .contents-wrapper h3 {
+  margin: 0 0 0 48%;
 }
-.contents-wrapper img{
+.contents-wrapper img {
   width: 45%;
-                }
+}
 /* .qa_left{
   display: inline-block;
   width: 50%;
@@ -18,3 +24,9 @@ p,dd,dt{
   display: inline-block;
   width: 50%;
 } */
+#pageTop {
+  width: 4vh;
+}
+#pageTop a {
+  right: 0.4rem;
+}

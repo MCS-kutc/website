@@ -1,56 +1,25 @@
-/*
-  Global
-*/
-/* body {
-  margin: 0;
-  padding: 0;
-}
-.bg-video-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  background: "2020_PV.mp4"no-repeat center center/cover;
-}
-.bg-video-wrap {
-  min-width: 100%;
-  min-height: 100vh;
-  z-index: 1;
-} */
- /*.container {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /*background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
-  background-size: 3px 3px;
-  z-index: 2;
-}*/
-
-
-.top img{
+.top img {
   width: 100%;
   height: auto;
-  }
+}
 body {
   font-size: 62.5%; /* 1rem = 10px */
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Noto Sans", "Noto Sans JP",
     "Noto Sans CJK JP", "Helvetica Neue", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "Segoe UI", メイリオ, Meiryo, sans-serif;
-  --gray: #4d4948;/*定義*/
+  --gray: #4d4948; /*定義*/
   --purple: #44318f;
   --red: #d70034;
   --cyan: #008cb4;
-  background: var(--gray);/*varで定義されたの出力*/
-  overflow-x: hidden;/*x軸方向隠される初期値visible*/
+  background: var(--gray); /*varで定義されたの出力*/
+  overflow-x: hidden; /*x軸方向隠される初期値visible*/
   font-feature-settings: "pkna";
-  }
+}
 
-
-
-p, dt, dd {
+p,
+dt,
+dd {
   font-size: 1.2rem;
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
     "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
@@ -62,16 +31,22 @@ p, dt, dd {
   z-index: 1;
 }
 
-
-.twitterblue {color: #00aced}
-.youtubered {color: #c4302b}
+.twitterblue {
+  color: #00aced;
+}
+.youtubered {
+  color: #c4302b;
+}
 .container {
-  margin: 0 auto;/*上下左右*/
+  margin: 0 auto; /*上下左右*/
   width: 90vw;
 }
 
 /*ヘッダー*/
-header {
+.hamberger_menu {
+  margin-right: auto;
+}
+.header {
   position: relative;
   z-index: 1;
 }
@@ -80,26 +55,25 @@ header {
   background: black;
   padding: 1rem;
   position: relative;
-
 }
-
 
 .header-nav ul {
   margin: 0.5rem 0;
-  display: flex;
 }
 
 .header-nav li {
   height: 3rem;
+  list-style: none;
 }
-
+.header-nav a {
+  height: 1rem;
+}
 .header-nav li:first-child {
-
   margin-right: auto;
 }
 
 .header-nav img {
-  height: 100%;
+  height: 50px;
   width: auto;
 }
 /* ハンバーガーメニュー */
@@ -110,11 +84,12 @@ header {
   vertical-align: middle;
   cursor: pointer;
   position: fixed;
+  /* position: absolute; */
   top: 30px;
   right: 30px;
   z-index: 100;
   transform: translateX(0);
-  transition: transform .5s;/*ボタンにマウスカーソルを乗せたときに、色や大きさなどが変わる時間を設定するときに使われる.5秒でｘ軸方向に0だけ動く*/
+  transition: transform 0.5s; /*ボタンにマウスカーソルを乗せたときに、色や大きさなどが変わる時間を設定するときに使われる.5秒でｘ軸方向に0になる動く*/
 }
 
 .hamberger_line span {
@@ -124,10 +99,10 @@ header {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color:aqua;
-  transition: all .5s;/*変化するすべてのプロパティ*/
+  background-color: white;
+  transition: all 0.5s; /*変化するすべてのプロパティ*/
 }
-
+/* 三本線 */
 .hamberger_line span:nth-of-type(1) {
   top: 0;
 }
@@ -152,17 +127,19 @@ header {
   transform: translateY(-12px) rotate(45deg);
 }
 
+/* メニュー */
+
 .hamberger_list {
   width: 250px;
   height: 100%;
   padding-top: 100px;
-  background-color: rgb(16, 69, 153, 0.8);
+  background-color: #222222;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 10;
   transform: translateX(250px);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .hamberger_list.open {
@@ -170,18 +147,37 @@ header {
 }
 
 .hamberger_list li {
-  text-align: center;
-  padding: 10px 0;
+  /* text-align: center; */
+  /* padding: 10px 0; */
   list-style: none;
+  display: block;
 }
 
 .hamberger_list a {
-  color: #fff;
   text-decoration: none;
+  display: block;
+  /* border-top: 1px solid #9F99A3;
+  border-left: 1px solid #9F99A3;
+  border-right: 1px solid #9F99A3; */
+  background-color: #333;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 5rem;
+
+  margin: 0px;
+  text-align: left;
+  font-size: 2rem;
 }
+.hamberger_line:hover,
+.hamberger_line:active {
+  color: #00b285;
+}
+
 /* トップの画像 */
 
-header::before {
+.header::before {
   display: block;
   position: absolute;
   top: 0;
@@ -190,17 +186,14 @@ header::before {
   content: "";
   width: 100%;
   height: 60vh;
-  background:url("./img/topphoto.jpg");
+  background: url("./img/topphoto.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
 
-
-
 .header-btn {
   margin: 2rem auto;
-
 }
 #how-to-btn {
   background: var(--purple);
@@ -212,7 +205,6 @@ header::before {
 
 #qa-btn {
   background: var(--cyan);
-
 }
 
 .header-btn a {
@@ -224,13 +216,13 @@ header::before {
   padding: 2rem;
 }
 
-.header-btn a::hover {
+.header-btn a:hover {
   color: black;
   text-decoration: none;
 }
 
-.header-btn a::visited {
-  color: black;
+.header-btn a:visited {
+  color: white;
   text-decoration: none;
 }
 
@@ -256,42 +248,16 @@ header::before {
   position: relative;
   overflow: hidden;
 }
-
-/* 背景 */
-/* #comment::before {
+#comment::before {
   position: absolute;
   content: " ";
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   top: 1rem;
-  background: url("../img/triangle_1.svg");
+  background: url("../img/triangle-double.svg");
   background-repeat: no-repeat;
   z-index: -2;
 }
-
-#comment::after {
-  position: absolute;
-  content: " ";
-  width: 100%;
-  height: 100%;
-  top: 1.5rem;
-  left: 0.5rem;
-  background: url("../img/triangle_2.svg");
-  background-repeat: no-repeat;
-  z-index: -1;
-} */
-#comment::before{
-
-    position: absolute;
-    content: " ";
-    width: 110%;
-    height: 110%;
-    top: 1rem;
-    background: url("../img/triangle-double.svg");
-    background-repeat: no-repeat;
-    z-index: -2;
-  }
-
 
 #how-to::before {
   position: absolute;
@@ -299,7 +265,7 @@ header::before {
   width: 75%;
   height: 75%;
   right: 0.5rem;
-  top: 25%;
+  top: 24.5%;
   background: url("../img/square_1.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -310,7 +276,7 @@ header::before {
   content: " ";
   width: 75%;
   height: 75%;
-  top: calc(25% + 0.5rem);
+  top: calc(24.5% + 0.5rem);
   right: 0;
   background: url("../img/square_2.svg");
   background-size: cover;
@@ -318,8 +284,7 @@ header::before {
   z-index: -1;
 }
 
-
-.button a{
+.button a {
   font-size: 0.5rem;
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
     "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
@@ -333,7 +298,7 @@ header::before {
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
-  background: silver;/*ボタン色*/
+  background: silver; /*ボタン色*/
   color: white;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
@@ -343,20 +308,17 @@ header::before {
 .link_btn:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
 }
-/*以下訪問済みのデザイン*/
-.link_btn:visited {
-  color: #008cb4;/*文字を青に*/
-}
+
 /*以下カーソルを当てたとき*/
 .link_btn:hover {
-  background: silver;/*背景色をシルバーに*/
-  text-decoration: none;/*下線を消す*/
-  color:white;
-
+  background: silver; /*背景色をシルバーに*/
+  text-decoration: none; /*下線を消す*/
+  color: white;
 }
+
 #details::before {
   position: absolute;
   content: " ";
@@ -382,13 +344,11 @@ header::before {
   z-index: -1;
 }
 
-
 .contents-wrapper img {
   width: 90%;
   height: auto;
   display: block;
   margin: 1rem auto;
-
 }
 
 .contents-wrapper p {
@@ -412,17 +372,16 @@ h2 {
   font-size: 2rem;
   /* margin-bottom: 1rem; */
   font-family: "Not o Serif", "Noto Serif JP", "Noto Serif CJK JP",
-  "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
-  "Yu Minc", YuMincho, HGS明朝E, serif;
+    "Times Npxpx Roman", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", 游明朝,
+    "Yu Minc", YuMincho, HGS明朝E, serif;
   line-height: 1.5;
   font-size: 2rem;
-  margin:4rem 0 0 2rem;
-
+  margin: 4rem 0 0 2rem;
 }
 
 h2::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 100%;
   left: 0;
   border: none;
@@ -430,8 +389,8 @@ h2::before {
   border-right: solid 20px rgb(149, 158, 155);
 }
 h3 {
-  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
-  color: white;/*文字色*/
+  padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
+  color: white; /*文字色*/
   /* background: #f4f4f4;背景色 */
   /* border-left: solid 5px #7db4e6;左線 */
   /* border-bottom: solid 3px #d7d7d7;下線 */
@@ -489,32 +448,26 @@ h3 {
   margin-right: 0;
 }
 
-
-
 #pageTop i {
   padding-top: 6px;
   position: absolute;
-    right: 0.7rem;
+  right: 0.4rem;
 }
-
-
 
 #pageTop a {
   display: block;
   z-index: 999;
   padding: 8px 0 0 8px;
   border-radius: 30px;
-  width: 35px;
-  height: 35px;
-  background-color:var(--cyan);
+  width: 31px;
+  height: 44px;
+  background-color: var(--cyan);
   color: #fff;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
   position: relative;
 }
-
-
 
 #pageTop a:hover {
   text-decoration: none;
@@ -547,7 +500,7 @@ small {
 /* .contents-wrapper-QA{
   text-align: center;
 } */
-.qa-container{
+.qa-container {
   display: inline-block;
   text-align: justify;
 }
@@ -556,75 +509,30 @@ small {
 font-family: Arial, Helvetica, sans-serif;
 } */
 
-.contents-wrapper a{
-  color : #F9BF33;
-  font-size: 1.3rem;
+.contents-wrapper a {
+  color: #008cb4;
+  font-size: 2vh;
   font-weight: bold;
 }
-.contents-wrapper a:hover{
+.contents-wrapper a:hover {
+  color: #f9bf33;
+  text-decoration: none;
+}
+#details .contents-wrapper a {
+  color: #f9bf33;
+}
+.contents-wrapper a:hover {
   color: #008cb4;
   text-decoration: none;
 }
-.answer a{
-  color: #F9BF33;
+
+.answer a {
+  color: #f9bf33;
 
   font-weight: bold;
 }
-.answer a:hover{
+.answer a:hover {
   color: #008cb4;
   text-decoration: none;
 }
 /*メニュー部分*/
-#ham-menu {
-  background-color: #fff; /*メニュー背景色*/
-  box-sizing: border-box;
-  height: 100%;
-  padding: 10px 40px; /*メニュー内部上下左右余白*/
-  position: fixed;
-  right: -300px; /*メニュー横幅①と合わせる*/
-  top: 0;
-  transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
-  width: 300px; /*メニュー横幅①*/
-  z-index: 1000;
-}
-
-/*メニューアイコン部分は疑似要素で*/
-#ham-menu::before {
-  background-color: #fff; /*ボタン部分背景色*/
-  border-radius: 0 0 0 10px; /*左下角丸*/
-  color: #333; /*アイコン（フォント）色*/
-  content: "≡"; /*メニューアイコン*/
-  display: block;
-  font-size: 50px; /*アイコン（フォント）サイズ*/
-  height: 50px;
-  line-height: 50px; /*縦位置中央化*/
-  position: absolute;
-  right: 100%;
-  text-align: center;
-  top: 0;
-  width: 50px;
-}
-
-/*透過背景部分*/
-#menu-background {
-  background-color: #333; /*黒背景部分背景色*/
-  display: block;
-  height: 100%;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
-  width: 100%;
-  z-index: -1;
-}
-
-/*hover 時の処理*/
-#ham-menu:hover {
-  transform: translate(-300px); /*メニュー横幅①と合わせる*/
-}
-
-#ham-menu:hover + #menu-background {
-  opacity: 0.5; /*黒背景部分透過度*/
-  z-index: 999;
-}
