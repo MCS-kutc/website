@@ -213,7 +213,7 @@ dd {
   font-size: 1.3rem;
   text-align: center;
   display: block;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .header-btn a:hover {
